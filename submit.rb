@@ -4,7 +4,7 @@ require "capybara/dsl"
 Capybara.run_server = false
 Capybara.current_driver = :selenium
 
-Url = 'https://itv.planflex.net/planview/login/body.asp'
+Url = 'ENTERURLHERE'
 UserName = 'ENTERUSERNAMEHERE'
 Password = 'ENTERPASSWORDHERE'
 
