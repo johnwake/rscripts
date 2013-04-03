@@ -8,8 +8,8 @@ def check_usage
 end
 
 def boring?(line)
-  line.split('/').include?("temp" || "recyler") 
-  #or line.split('/').include?('recyler')
+  line.split('/').include?("temp") or #|| "recyler") 
+   line.split('/').include?('recyler')
 end
 
 def inventory_from(filename)
@@ -36,4 +36,5 @@ puts old_inventory - new_inventory
 if $0 == __FILE__
   check usage
   compare_inventory_files(ARGV[0], ARGV[1])
+end
 end
